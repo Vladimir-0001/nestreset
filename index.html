@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>nestReset.nl</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      text-align: center;
+      padding: 2rem;
+    }
+    button {
+      background-color: #a02edb;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      margin: 0.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    button:disabled {
+      background-color: #555;
+      cursor: not-allowed;
+    }
+    #how-to {
+      margin-top: 4rem;
+      text-align: center;
+    }
+    #how-to h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .how-step {
+      margin-bottom: 2rem;
+    }
+    .how-step img {
+      width: 90%;
+      max-width: 500px;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>nestReset.nl</h1>
+    <p>Select your Nest device folder, upload the reset file (.dropbox), and disconnect.</p>
+    <button id="selectFolderBtn">Select Device Folder</button>
+    <button id="uploadBtn" disabled>Upload Reset File</button>
+    <div id="status"></div>
+    <p id="working-status" style="color: #8aff91; margin-top: 1rem;"></p>
+
+
+    <div id="how-to">
+      <h2>How To Reset Your Nest</h2>
+
+      <div class="how-step">
+        <p>1. Plug in your Nest device to your computer using a USB cable.</p>
+        <img src="img/nest-plugged-in.png" alt="Plug in Nest">
+      </div>
+
+      <div class="how-step">
+        <p>2. Select your Nest device folder in the file picker.</p>
+        <img src="img/select-folder.png" alt="Select Device Folder">
+      </div>
+
+      <div class="how-step">
+        <p>3. Click "Upload Reset File" to Reset the Device.</p>
+        <img src="img/upload-file.png" alt="Upload Reset File">
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
